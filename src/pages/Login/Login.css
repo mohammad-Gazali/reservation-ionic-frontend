@@ -1,0 +1,14 @@
+#login-page ion-icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  background-color: var(--ion-color-secondary);
+  border-radius: 50%;
+  color: var(--ion-color-secondary-contrast);
+}
+
+#login-page ion-item {
+  --padding-start: 4px;
+}
