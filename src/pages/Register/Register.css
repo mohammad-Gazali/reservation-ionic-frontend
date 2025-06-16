@@ -1,17 +1,92 @@
-#register-page ion-item {
-  --padding-start: 4px;
+/* src/pages/RegisterPage.css */
+
+#register-page .auth-page {
+  --background: linear-gradient(135deg, #43cea2, #185a9d);
 }
 
-#register-page ion-avatar {
-  display: grid;
-  place-items: center;
+#register-page .auth-container {
+  max-width: 400px;
+  margin: auto;
+
+  color: white;
+  text-align: center;
+}
+
+#register-page .auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+#register-page .input-field {
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+#register-page .input-field ion-input::placeholder {
+  color: #ddd;
+}
+
+#register-page .login-btn,
+#register-page .google-btn {
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+#register-page .auth-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#register-page .avatar-upload {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#register-page .avatar-preview {
   width: 100px;
   height: 100px;
-  background-color: #f4f5f8;
-  margin: 0 auto;
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-#register-page ion-avatar ion-icon {
-  font-size: 50px;
-  color: #757575;
+#register-page .avatar-placeholder {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+#register-page .avatar-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#register-page .avatar-label ion-icon {
+  color: white;
+  font-size: 1rem;
+}
+
+#register-page .google-btn {
+  --color: var(--ion-primary-contrast);
+  --border-color: var(--ion-primary-contrast);
+}
+
+#register-page .auth-footer ion-router-link {
+  --color: var(--ion-primary-contrast);
+  text-decoration: underline;
 }

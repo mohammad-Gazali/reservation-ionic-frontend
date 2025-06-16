@@ -1,0 +1,9 @@
+#home-page .category-card {
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+
+#home-page .category-card ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

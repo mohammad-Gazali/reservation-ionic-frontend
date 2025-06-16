@@ -1,14 +1,51 @@
-#login-page ion-icon {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  margin: 0 auto 1rem;
-  padding: 1rem;
-  background-color: var(--ion-color-secondary);
-  border-radius: 50%;
-  color: var(--ion-color-secondary-contrast);
+/* src/pages/LoginPage.css */
+
+#login-page .auth-page {
+  --background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
-#login-page ion-item {
-  --padding-start: 4px;
+#login-page .auth-container {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+}
+
+#login-page .auth-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+#login-page .input-field {
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+#login-page .input-field ion-input::placeholder {
+  color: #ddd;
+}
+
+#login-page .login-btn,
+#login-page .google-btn {
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+#login-page .google-btn {
+  --color: var(--ion-primary-contrast);
+  --border-color: var(--ion-primary-contrast);
+}
+
+#login-page .auth-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#login-page .auth-footer ion-router-link {
+  --color: var(--ion-primary-contrast);
+  text-decoration: underline;
 }
